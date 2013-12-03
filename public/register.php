@@ -37,7 +37,7 @@
         }
     
         // search through database for username
-        $used = query("INSERT INTO users (lastname, firstname, email, password, username) VALUES(?, ?, ?, ?, ?)", $_POST["lastname"], $_POST["firstname"], $_POST["email"], $_POST["password"], $_POST["username"]);
+        $used = query("INSERT INTO users (lastname, firstname, email, password, username) VALUES(?, ?, ?, ?, ?)", $_POST["lastname"], $_POST["firstname"], $_POST["email"], crypt($_POST["password"]), $_POST["username"]);
         
         // check if user name is already in use
         if ($used === false)
@@ -53,7 +53,7 @@
         $_SESSION["id"] = "id";
         
         // redirects to main page
-        redirect("http://localhost/public/home.php");
+        redirect("http://localhost/public/index.php");
     }
     else
     {

@@ -35,7 +35,7 @@
                 $_SESSION["name"] = $name[0];
 
                 // redirect to home
-                redirect("http://localhost/templates/home.php");
+                redirect("http://localhost/public/index.php");
             }
         }
 

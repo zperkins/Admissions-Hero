@@ -8,10 +8,10 @@
      */
 
     // your database's name
-    define("DATABASE", "Admissions Hero");
+    define("DATABASE", "admissionshero");
 
     // your database's password
-    define("PASSWORD", "nadia");
+    define("PASSWORD", "root");
 
     // your database's server
     define("SERVER", "localhost");

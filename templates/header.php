@@ -23,11 +23,7 @@
     <body>
 
         <div class="container">
-
-            <div id="top">
-                <a href="/"><img alt="Admissions Hero" src="http://www.admissionshero.com/wp-content/uploads/2013/07/logo.jpg"/></a>
-            </div>
             <div>
-                Welcome, <?php print($_SESSION["name"]);?>
+                <a href="/"><img alt="Admissions Hero" src="http://www.admissionshero.com/wp-content/uploads/2013/07/logo.jpg"/></a>
             </div>
             <div id="middle">
